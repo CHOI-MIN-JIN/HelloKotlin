@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-//    var btnHello : Button
+    //    var btnHello : Button
 //    val btnHello
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +28,12 @@ class MainActivity : AppCompatActivity() {
         btnKotlin.setOnClickListener {
             intent = Intent(this@MainActivity, BMIKotlinActivity::class.java)
             startActivity(intent)
-    }
+        }
+        btnVarJava.setOnClickListener {
+            startActivity(Intent(this@MainActivity, VariableJavaActivity::class.java))
+        }
+        btnVarKotlin.setOnClickListener {
+            startActivity(Intent(this@MainActivity, VariableKotlinActivity::class.java))
+        }
     }
 }
