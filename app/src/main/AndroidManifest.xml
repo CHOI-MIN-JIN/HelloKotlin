@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloKotlin">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".BMIKotlinActivity"
+            android:label="BMIKotlinActivity"></activity>
+        <activity
+            android:name=".BMIJavaActivity"
+            android:label="BMIHavaActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="BMI calculation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
